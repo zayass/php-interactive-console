@@ -147,7 +147,7 @@ class PHPInteractiveConsole {
         }
         
         protected static function checkSyntax($cmd) {
-                return @eval('return true; namecpace check;'.$cmd);
+                return @eval('namespace check; return true;'.$cmd);
         }
 }
 
